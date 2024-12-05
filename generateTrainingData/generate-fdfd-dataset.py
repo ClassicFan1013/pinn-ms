@@ -137,7 +137,7 @@ def generateDataset(parameterDictionary):
     df.to_pickle(datadir+filename)
         
 #%%
-parameterDictionary = {'datasize': 10000,
+parameterDictionary = {'datasize': 1000,
                        'numRadii': 11,
                        'index': 2,
                        'wave': 0.633,
@@ -147,6 +147,6 @@ parameterDictionary = {'datasize': 10000,
                        'NPML': [10,0],
                        'pol': 'Ez',
                        'BC' : False,
-                       'datadir': '/home/noise/code/pinn/inv-design-2d/pinn-metagrating-optimization/generateTrainingData/fdfd-data/',
+                       'datadir': 'generateTrainingData/fdfd-data/',
                        'filename': 'fdfd-data.dat'}
 generateDataset(parameterDictionary)

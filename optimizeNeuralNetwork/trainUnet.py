@@ -11,7 +11,7 @@ import pandas as pd
 from UNetArch import *
 from plotUtil import *
 #%% test dataset
-datafile = '/home/noise/code/pinn/inv-design-2d/pinn-metagrating-optimization/generateTrainingData/fdfd-data/fdfd-data.dat'
+datafile = 'generateTrainingData/fdfd-data/fdfd-data.dat'
 data = pd.read_pickle(datafile)
 test_data = data[0:100] # only test 100 samples from full dataset
 
