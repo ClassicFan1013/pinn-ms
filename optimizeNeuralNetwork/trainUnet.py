@@ -227,13 +227,13 @@ for epoch in range(nepochs):
         test_loss_ar.append(np.mean(test_batch_loss))
         test_norm_error_ar.append(np.mean(test_batch_norm_error))
         #%%
-        plt.figure()
+        plt.figure(1)
         plt.plot(np.log(train_loss_ar))
         plt.plot(epochNo,np.log(test_loss_ar))
         plt.legend(['train loss', 'test loss'])
         plt.show()
         
-        plt.figure()
+        plt.figure(1)
         plt.plot(test_norm_error_ar)
         plt.legend(['F norm error'])
         plt.show()
